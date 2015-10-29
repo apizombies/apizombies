@@ -1,0 +1,30 @@
+{
+  "name": "apizombies",
+  "version": "1.0.0",
+  "description": "rotten zombie-hackers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apizombies/apizombies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apizombies/apizombies/issues"
+  },
+  "homepage": "https://github.com/apizombies/apizombies#readme",
+  "dependencies": {
+    "material-ui": "^0.13.1",
+    "react": "^0.14.1",
+    "react-addons-create-fragment": "^0.14.1",
+    "react-addons-pure-render-mixin": "^0.14.1",
+    "react-addons-transition-group": "^0.14.1",
+    "react-addons-update": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "react-tap-event-plugin": "^0.2.1"
+  }
+}
+
