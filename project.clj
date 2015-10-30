@@ -86,7 +86,9 @@
                        :main apizombies.server
                        :cljsbuild {:builds {:app
                                             {:source-paths ["env/prod/cljs"]
-                                             :compiler
-                                             {:optimizations :advanced
-                                              :externs ["resources/public/externs/material.js"]
-                                              :pretty-print false}}}}}})
+                                             :compiler {:output-to     "resources/public/js/app.js"
+                                                        :output-dir    "resources/public/js/out"
+                                                        :source-map    "resources/public/js/out.js.map"
+                                                        :preamble      ["react/react.min.js"]
+                                                        :optimizations :none
+                                                        :pretty-print  true}}}}}})

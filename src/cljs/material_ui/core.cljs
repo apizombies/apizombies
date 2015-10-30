@@ -4,18 +4,18 @@
 
 (export-material-ui-react-classes)
 
-(def theme-manager
+(def ^:dynamic theme-manager
   js/MaterialUI.Styles.ThemeManager)
 
 ;; By the moment, we are using the default light theme.
 ;; We could define our custom theme here.
-(def light-theme
+(def ^:dynamic light-theme
   js/MaterialUI.Styles.LightRawTheme)
 
-(def light-theme->clj
+(def ^:dynamic light-theme->clj
   (js->clj light-theme :keywordize-keys true))
 
-(def custom-theme
+(def ^:dynamic custom-theme
   (-> material-ui.core/light-theme->clj
       (assoc-in [:palette :primary1Color] "#77477E")
       (assoc-in [:palette :accent1Color] "#FE9600")))
