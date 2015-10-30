@@ -80,7 +80,8 @@
 
              :uberjar {:source-paths ["env/prod/clj"]
                        :hooks [leiningen.cljsbuild]
-                       :env {:production true}
+                       :env {:is-dev true ;; :production true
+                             }
                        :omit-source true
                        :aot :all
                        :main apizombies.server
