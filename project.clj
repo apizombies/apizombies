@@ -80,16 +80,13 @@
 
              :uberjar {:source-paths ["env/prod/clj"]
                        :hooks [leiningen.cljsbuild]
-                       :env {:is-dev true ;; :production true
-                             }
+                       :env {:production true}
                        :omit-source true
                        :aot :all
                        :main apizombies.server
                        :cljsbuild {:builds {:app
                                             {:source-paths ["env/prod/cljs"]
-                                             :compiler {:output-to     "resources/public/js/app.js"
-                                                        :output-dir    "resources/public/js/out"
-                                                        :source-map    "resources/public/js/out.js.map"
-                                                        :preamble      ["react/react.min.js"]
-                                                        :optimizations :none
-                                                        :pretty-print  true}}}}}})
+                                             :compiler
+                                             {:optimizations :none
+                                              :externs ["resources/public/externs/material.js"]
+                                              :pretty-print false}}}}}})
