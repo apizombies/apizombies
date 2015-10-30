@@ -16,3 +16,8 @@ body {
 #logo {
     margin-bottom: 20px;
 }
+
+#message {
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+}
