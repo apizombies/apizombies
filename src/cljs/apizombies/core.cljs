@@ -95,7 +95,7 @@
 
 (defn load-employees []
   (let [res-chan (chan)]
-    (GET "http://localhost:10555/employees" {:handler (fn [res] (put! res-chan res))
+    (GET "http://apizombies.herokuapp.com/employees" {:handler (fn [res] (put! res-chan res))
                                              :response-format :json
                                              :keywords? true})
     res-chan))
