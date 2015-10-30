@@ -1,5 +1,5 @@
 body {
-    background: url('img/bg_halloween.jpg');
+    background: url('../img/bg_halloween.jpg');
     margin: 0;
     position: absolute;
     top: 0;
@@ -8,6 +8,11 @@ body {
     left: 0;
 }
 
-#id {
+#app {
+    margin-top: 40px;
+    text-align: center;
+}
 
+#logo {
+    margin-bottom: 20px;
 }
