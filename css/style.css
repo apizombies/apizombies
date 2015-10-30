@@ -1,5 +1,6 @@
 body {
     background: url('img/bg_halloween.jpg');
+    margin: 0;
     position: absolute;
     top: 0;
     bottom: 0;
