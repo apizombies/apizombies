@@ -88,4 +88,5 @@
                                             {:source-paths ["env/prod/cljs"]
                                              :compiler
                                              {:optimizations :advanced
+                                              :externs ["resources/public/externs/material.js"]
                                               :pretty-print false}}}}}})
