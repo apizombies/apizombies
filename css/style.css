@@ -17,6 +17,10 @@ body {
     margin-bottom: 20px;
 }
 
+a {
+    color: #77477E;
+}
+
 #message {
     font-family: "Roboto", sans-serif;
     font-size: 48px;
